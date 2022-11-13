@@ -10,7 +10,8 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <Header/>
+      <Header />
+      <Pesquisa />
     </AppContainer>
   );
 }
