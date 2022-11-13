@@ -26,16 +26,13 @@ const Subtitulo = styled.h3`
 `
 
 const Resultado = styled.div`
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    cursor: pointer;
-    p {
-        width: 200px;
-    }
+    cursor: pointer;    
     img {
-        width: 100px;
+        width: 150px;
     }
     &:hover {
         border: 1px solid white;
@@ -58,13 +55,12 @@ function Pesquisa() {
                     const resultadoPesquisa = livros.filter( livro => livro.nome.includes(textoDigitado))
                     setLivrosPesquisados(resultadoPesquisa)
                 }}                
-            />
+            />            
             { livrosPesquisados.map( livro => (
                 <Resultado>                    
-                    <img src={livro.src} alt={livro.nome}/>
-                    <p>{livro.nome}</p>
+                    <img src={livro.src} alt={livro.nome} key={livro.id}/>                    
                 </Resultado>                
-            ))}
+            ))}            
         </PesquisaContainer>        
     )    
 }
