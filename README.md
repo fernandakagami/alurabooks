@@ -14,7 +14,7 @@ Project of a landing page.
 
 ## 💻 Project
 
-This was a project of Alura.
+This was a project of Alura course.
 
 <a href="https://alurabooks-chi-flax.vercel.app/">Link to the project</a><br>
 
